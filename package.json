@@ -1,0 +1,26 @@
+{
+  "name": "final-form-formdata",
+  "version": "0.1.0-alpha",
+  "description": "A decorator to wrap onSubmit and convert values to FormData",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "./node_modules/.bin/babel src --out-dir dist",
+    "test": "jest --coverage"
+  },
+  "author": "Timothy A. McCurrach",
+  "license": "ISC",
+  "dependencies": {
+    "final-form": "^4.20.1"
+  },
+  "peerDependencies": {
+    "final-form": "^4.20.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "jest": "^26.6.3",
+    "rimraf": "^3.0.2"
+  }
+}
