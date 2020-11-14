@@ -88,7 +88,6 @@ describe("convertToFormData", () => {
     expect(onSubmit).toHaveBeenCalledTimes(1);
 
     const entries = Array.from(onSubmit.mock.calls[0][0].entries());
-    console.log(entries);
     expect(entries).toEqual([
       ["firstName", "Tim"],
       ["lastName", "McCurrach"],
