@@ -4,16 +4,16 @@
  * will be serialized to become "[Object object]".
  */
 export const appendAll = (fieldName, value, formData, fieldNames) => {
-	formData.append(fieldName, value);
+  formData.append(fieldName, value);
 };
 
 /*
  *Blobs (including Files) are added, but all other objects are ignored.
  */
 export const onlyAcceptBlobs = (fieldName, value, formData, fieldNames) => {
-	if (value instanceof Blob) {
-		formData.append(fieldName, value);
-	}
+  if (value instanceof Blob) {
+    formData.append(fieldName, value);
+  }
 };
 
 //TODO: Complete traverseObjects
