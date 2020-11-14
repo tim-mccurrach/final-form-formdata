@@ -6,8 +6,8 @@ A decorator to convert submitted `final-form` data into `formData`.
 
 `final-form` stores it's state just as a normal javascript object. This would normally be serialized into JSON before being sent to the backend. However there are a few situations where other formats may be required.
 
--   File uploads require `multi-part/formdata` (`Files` are not JSON serializable). Whilst it is possible to handle file uploads separately, there are plenty of situations where it is preferable to submit your files and form-data as a single request.
--   If you are updating your front-end, and your backend is expecting `multi-part/formdata` this allows you to update front-end and back-end independently.
+- File uploads require `multi-part/formdata` (`Files` are not JSON serializable). Whilst it is possible to handle file uploads separately, there are plenty of situations where it is preferable to submit your files and form-data as a single request.
+- If you are updating your front-end, and your backend is expecting `multi-part/formdata` this allows you to update front-end and back-end independently.
 
 ### Installation
 
@@ -75,8 +75,8 @@ const myForm = () => (
 
 Two complex value handlers are exported with the library:
 
--   `appendAll`: all values are just added as an entry
--   `onlyAcceptBlobs`: `Blob`s (including `File`s) are added, but all other objects are ignored.
+- `appendAll`: all values are just added as an entry
+- `onlyAcceptBlobs`: `Blob`s (including `File`s) are added, but all other objects are ignored.
 
 The default value is `acceptAll`, but you can of course write your own.
 

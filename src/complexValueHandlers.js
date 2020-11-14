@@ -3,14 +3,14 @@
  * suitable for all situation. For example objects
  * will be serialized to become "[Object object]".
  */
-export const appendAll = (fieldName, value, formData, fieldNames) => {
+export const appendAll = (fieldName, value, formData) => {
 	formData.append(fieldName, value);
 };
 
 /*
  *Blobs (including Files) are added, but all other objects are ignored.
  */
-export const onlyAcceptBlobs = (fieldName, value, formData, fieldNames) => {
+export const onlyAcceptBlobs = (fieldName, value, formData) => {
 	if (value instanceof Blob) {
 		formData.append(fieldName, value);
 	}
