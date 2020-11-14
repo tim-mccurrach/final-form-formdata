@@ -9,8 +9,19 @@
     "lint": "eslint .",
     "test": "jest --coverage"
   },
+  "files": [
+    "dist"
+  ],
   "author": "Timothy A. McCurrach",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tim-mccurrach/final-form-formdata.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tim-mccurrach/final-form-formdata/issues"
+  },
+  "homepage": "https://github.com/tim-mccurrach/final-form-formdata#readme",
   "dependencies": {
     "final-form": "^4.20.1"
   },
