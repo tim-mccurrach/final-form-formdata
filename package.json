@@ -6,6 +6,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "./node_modules/.bin/babel src --out-dir dist",
+    "lint": "eslint .",
     "test": "jest --coverage"
   },
   "author": "Timothy A. McCurrach",
